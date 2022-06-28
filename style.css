@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto:wght@100;300;400;500;700&display=swap');
+
+*{
+    font-family: 'roboto';
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    width: 100vw;
+    background-color: bisque;
+    position: relative;
+}
+#container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    /* background-color: white; */
+    margin: 1.5rem 8rem;
+    width: 100%;    
+    box-shadow: 0 0 10px 2px;
+    /* overflow-y: auto; */
+}
+#meal-Search{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+}
+#header{
+    margin: 20px 0;
+}
+#p{
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#search{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    width: 50%;   
+}
+#searchInput{
+    width: 65%;
+    height: 2.5rem;
+    border: .5px solid aqua;
+    border-right: none;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    font: large 'roboto';
+    padding: 0 15px;
+    margin: 10px 0;
+}
+#search button{
+    height: 2.4rem;
+    width: 2.2rem;
+    border: none;
+    color: white;
+    font-size: medium;
+    background-color: aqua;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+}
+#meal-Results{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+#result{
+    text-align: center;
+    margin: 30px 0;
+}
+#result-Output{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#meals{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    width: 20%;
+    height: 21rem;
+    margin: 2rem;
+    box-shadow: 0 0 10px 2px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+#meals img{
+    width: auto;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    height: 65%;
+}
+#meals h4{
+    margin: 20px auto;
+}
+#meals button{
+    width: 50%;
+    border: none;
+    border-radius: 30px;
+    background-color: aqua;
+    margin: 0 auto;
+    padding: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+#recipeBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 33rem;
+    width: 30%;
+    color: white;
+    background-color: black;
+    border: 1px solid black;
+}
+#cancel{
+    border: 1px solid white;
+    height: 20px;
+    font-weight: 900;
+    width: 22px;
+    text-align: center;
+    border-radius: 45%;
+    background-color: red;
+    margin: 0px 0 10px 80%;
+}
+#foodName{
+    margin: 10px;
+}
+#ingredient{
+    margin: 10px;
+    border: 1px solid white;
+    background-color: white;
+    color: black;
+    font-weight: 900;
+    padding: 3px 5px;
+    margin: 14px;
+}
+#desc{
+    width: 90%;
+    text-align: center;
+    margin: 1rem 0;
+}
+#recipeBox img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 6px;
+}
+@media screen and (max-width: 850px){
+    #container{
+        margin: 1.5rem 2rem;
+        width: 100%;    
+    }
+    #meal-Search{
+        padding: .5rem 0;
+    }
+    #header{
+        margin: 15px 0;
+        text-align: center;
+    }
+    #p{
+        margin: 15px 0;
+    }
+    #search{
+        width: 70%;   
+    }
+    
+    #result{
+        text-align: center;
+        margin: 10px 0;
+    }
+    #meals{
+        width: 30%;
+        height: 17rem;
+        margin: 1.2rem;
+    }
+    #meals h4{
+        margin: 10px auto;
+        text-align: center;
+    }
+    #meals button{
+        width: 65%;
+        margin: 0 auto;
+    }
+    #recipeBox{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 33rem;
+        width: 30%;
+        color: white;
+        background-color: black;
+        border: 1px solid black;
+    }
+    #cancel{
+        border: 1px solid white;
+        height: 20px;
+        font-weight: 900;
+        width: 22px;
+        text-align: center;
+        border-radius: 45%;
+        background-color: red;
+        margin: 0px 0 10px 80%;
+    }
+    #foodName{
+        margin: 10px;
+    }
+    #ingredient{
+        margin: 10px;
+        border: 1px solid white;
+        background-color: white;
+        color: black;
+        font-weight: 900;
+        padding: 3px 5px;
+        margin: 14px;
+    }
+    #desc{
+        width: 90%;
+        text-align: center;
+        margin: 1rem 0;
+    }
+    #recipeBox img{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin: 6px;
+    }
+}
+    
+@media screen and (max-width: 400px){
+    #container{
+        margin: 1.5rem 1rem;
+        width: 100%;    
+    }
+    #meal-Search{
+        padding: .2rem 0;
+    }
+    #header{
+        margin: 12px 0;
+        text-align: center;
+    }
+    #p{
+        margin: 10px 0;
+    }
+    #search{
+        width: 85%;   
+    }
+    
+    #result{
+        text-align: center;
+        margin: 8px 0;
+    }
+    #meals{
+        width: 40%;
+        height: 15rem;
+        margin: 1rem;
+    }
+    #meals h4{
+        margin: 8px auto;
+        text-align: center;
+    }
+    #meals button{
+        width: 70%;
+        margin: 0 auto;
+    }
+    #recipeBox{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 33rem;
+        width: 30%;
+        color: white;
+        background-color: black;
+        border: 1px solid black;
+    }
+    #cancel{
+        border: 1px solid white;
+        height: 20px;
+        font-weight: 900;
+        width: 22px;
+        text-align: center;
+        border-radius: 45%;
+        background-color: red;
+        margin: 0px 0 10px 80%;
+    }
+    #foodName{
+        margin: 10px;
+    }
+    #ingredient{
+        margin: 10px;
+        border: 1px solid white;
+        background-color: white;
+        color: black;
+        font-weight: 900;
+        padding: 3px 5px;
+        margin: 14px;
+    }
+    #desc{
+        width: 90%;
+        text-align: center;
+        margin: 1rem 0;
+    }
+    #recipeBox img{
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin: 6px;
+    }
+}
+}
