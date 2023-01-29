@@ -39,11 +39,15 @@ function getMealList(){
     })
 }
 
+// getting meal recipe
+function getRecipe(e){
+    e.preventDefault()
+    if(e.target.classlist.includes('recipeBtn')){
+        let mealItem = e.target.parentElement.parentElement
+        console.log(mealItem);
+        fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${mealItem.database.id}`)
+        .then(response => response.json())
+        .then
 
-// function getRecipe(e){
-//     e.preventDefault()
-//     if(e.target.classlist.includes('recipeBtn')){
-//         let mealItem = e.target.parentElement.parentElement
-//         console.log(mealItem);
-//     }
-// }
+    }
+}

@@ -50,6 +50,7 @@ body{
     width: 65%;
     height: 2.5rem;
     border: .5px solid aqua;
+    outline: none;
     border-right: none;
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;
@@ -58,12 +59,13 @@ body{
     margin: 10px 0;
 }
 #search button{
-    height: 2.4rem;
+    height: 2.45rem;
     width: 2.2rem;
     border: none;
     color: white;
     font-size: medium;
     background-color: aqua;
+    outline: none;
     border-bottom-right-radius: 20px;
     border-top-right-radius: 20px;
 }
